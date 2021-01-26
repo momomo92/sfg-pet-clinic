@@ -1,5 +1,14 @@
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/map/OwnerServiceMap.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/OwnerService.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/Owner.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/PetService.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/CrudService.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/VetService.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/BaseEntity.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/map/AbstractMapService.java
 /home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/Person.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/map/VetServiceMap.java
 /home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/Vet.java
 /home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/Pet.java
+/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/services/map/PetServiceMap.java
 /home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/PetType.java
-/home/melewskip/javaProjects/sfg-pet-clinic/pet-clinic-data/src/main/java/momo/springframework/sfgpetclinic/model/Owner.java
