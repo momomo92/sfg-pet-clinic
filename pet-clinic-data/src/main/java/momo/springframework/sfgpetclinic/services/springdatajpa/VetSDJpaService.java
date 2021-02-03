@@ -1,5 +1,6 @@
 package momo.springframework.sfgpetclinic.services.springdatajpa;
 
+import momo.springframework.sfgpetclinic.model.Speciality;
 import momo.springframework.sfgpetclinic.model.Vet;
 import momo.springframework.sfgpetclinic.repositories.VetRepository;
 import momo.springframework.sfgpetclinic.services.VetService;
@@ -14,9 +15,11 @@ import java.util.Set;
 public class VetSDJpaService implements VetService {
 
     private final VetRepository vetRepository;
+    private final SpecialitySDJpaService specialitySDJpaService;
 
-    public VetSDJpaService(VetRepository vetRepository) {
+    public VetSDJpaService(VetRepository vetRepository, SpecialitySDJpaService specialitySDJpaService) {
         this.vetRepository = vetRepository;
+        this.specialitySDJpaService = specialitySDJpaService;
     }
 
     @Override
@@ -35,7 +38,20 @@ public class VetSDJpaService implements VetService {
 
     @Override
     public Vet save(Vet object) {
-        return vetRepository.save(object);
+        Vet result = null;
+
+        if (0 < object.getSpecialities().size()) {
+            object.getSpecialities().forEach(speciality -> {
+                if (null == speciality.getId()) {
+                    Speciality saveSpeciality = specialitySDJpaService.save(speciality);
+                    speciality.setId(saveSpeciality.getId());
+                }
+            });
+
+            result = vetRepository.save(object);
+        }
+
+        return result;
     }
 
     @Override
