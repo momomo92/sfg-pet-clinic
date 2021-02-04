@@ -4,11 +4,13 @@ import momo.springframework.sfgpetclinic.model.Speciality;
 import momo.springframework.sfgpetclinic.model.Vet;
 import momo.springframework.sfgpetclinic.services.SpecialityService;
 import momo.springframework.sfgpetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
